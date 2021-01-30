@@ -99,11 +99,11 @@ jobs:
           # 
 
           # 编译x64固件:
-          # cat >> .config <<EOF
-          # CONFIG_TARGET_x86=y
-          # CONFIG_TARGET_x86_64=y
-          # CONFIG_TARGET_x86_64_Generic=y
-          # EOF
+           cat >> .config <<EOF
+           CONFIG_TARGET_mt7628=y
+           CONFIG_TARGET_x86_64=y
+           CONFIG_TARGET_x86_64_Generic=y
+           EOF
 
           # 固件压缩:
           # cat >> .config <<EOF
@@ -163,6 +163,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-webadmin=y
           # CONFIG_PACKAGE_luci-app-wireguard=y
           # CONFIG_PACKAGE_luci-app-wrtbwmon=y
+            CONFIG_PACKAGE_luci-app-Nps=y
           # EOF
 
           # LuCI主题:
