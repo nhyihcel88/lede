@@ -100,9 +100,9 @@ jobs:
 
           # 编译x64固件:
            cat >> .config <<EOF
-           CONFIG_TARGET_MT7628=y
-           CONFIG_TARGET_MT7628=y
-           CONFIG_TARGET_MT7628=y
+           CONFIG_TARGET_mt76x8=y
+           CONFIG_TARGET_mt76x8=y
+           CONFIG_TARGET_mt300n-v2_Generic=y
            EOF
 
           # 固件压缩:
