@@ -100,15 +100,15 @@ jobs:
 
           # 编译x64固件:
            cat >> .config <<EOF
-           CONFIG_TARGET_mt7628=y
-           CONFIG_TARGET_x86_64=y
-           CONFIG_TARGET_x86_64_Generic=y
+           CONFIG_TARGET_MT7628=y
+           CONFIG_TARGET_MT7628=y
+           CONFIG_TARGET_MT7628=y
            EOF
 
           # 固件压缩:
-          # cat >> .config <<EOF
-          # CONFIG_TARGET_IMAGES_GZIP=y
-          # EOF
+           cat >> .config <<EOF
+           CONFIG_TARGET_IMAGES_GZIP=y
+           EOF
 
           # 编译UEFI固件:
           # cat >> .config <<EOF
@@ -167,10 +167,10 @@ jobs:
           # EOF
 
           # LuCI主题:
-          # cat >> .config <<EOF
-          # CONFIG_PACKAGE_luci-theme-argon=y
+            cat >> .config <<EOF
+            CONFIG_PACKAGE_luci-theme-argon=y
           # CONFIG_PACKAGE_luci-theme-netgear=y
-          # EOF
+            EOF
 
           # 常用软件包:
           # cat >> .config <<EOF
